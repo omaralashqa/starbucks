@@ -1,0 +1,370 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.site-box {
+    
+    border-radius: 0 0 0px 50px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.863);
+    overflow: hidden;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1366px;
+    margin:0 auto;
+    padding: 0 ;
+    height: 10vh;
+   
+   
+   
+}
+nav .logo img{
+    width: 80px;
+}
+nav .logo h2 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1.2rem;
+    color: #00704A;
+}
+nav .logo{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 1.8rem;
+
+}
+.item{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.itemslink{
+    padding:0 2rem;
+    text-decoration: none;
+}
+.itemslink .links{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: 'Playwrite HU';
+}
+.itemslink .links:hover{
+    color: #00704A;
+}
+ .hero{
+
+    max-width: 1366px;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+}
+.img img{
+    width:300px;
+    transform: rotate(-20deg);
+    padding:0 280px;
+    margin: px;
+}
+.hero .content h2{
+    font-size: 40px;
+}
+.hero .content h2 span {color: #00704A; font-size: 70px;}
+.hero .content p{
+    width: 600px;
+    font-size: 18px ;
+}
+.hero .content button a {
+    color: white;
+    text-decoration-line: none;
+    font-size:30px;
+    ;
+}
+.hero .content button {border-radius: 80px;
+background-color: #00704A;
+width: 170px;
+height: 50px;}
+.photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1366px;
+    margin:0 auto;
+    padding: 0px;
+    max-height: 1vh;
+animation: an2 1s;
+
+
+}
+.photo a img{
+    width: 110px;
+    margin: 20px;
+    
+}
+.photo a img:hover{
+    transform: scale(1.1); 
+    opacity: 0.8;
+
+}
+@keyframes an2 {
+    0%{
+    transform: translateY(200px);
+    }
+    100%{
+        transform: translateY(0px);
+        }
+    }
+    /* نصف دائرة أسفل يمين الشاشة */
+.half-circle {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    width: 600px; /* عرض نصف الدائرة */
+    height: 700px; /* ارتفاع نصف الدائرة */
+    background-color: #00704A; /* لون نصف الدائرة */
+    border-top-left-radius: 600px; /* نصف دائرة */
+    z-index: -1; /* جعل العنصر خلف المحتوى */
+}
+
+.face {width: 50px;
+
+}
+.fa{
+    display: flex;
+    flex-direction: column;
+    padding-left: px;
+}
+
+
+/* إعداد القسم بالكامل */
+#menu {
+    padding: 50px 20px;
+    background: #f8f9fa;
+}
+
+/* العناوين */
+#menu .title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#menu .title h1 {
+    font-weight: bold;
+    font-size: 3em;
+    color: #00704A;
+}
+
+#menu .title h3 {
+    font-size: 2em;
+    color: #555;
+    text-align: center;
+}
+
+/* إعداد الخط الأفقي */
+#menu .title hr {
+    width: 50px;
+    border: 2px solid #00704A;
+    margin: 10px auto;
+}
+
+/* تصميم المشروبات باستخدام Grid */
+.drinks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* العنصر الخاص بالمشروب */
+.drink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:rgb(220, 219, 218);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+    position: relative;
+    padding: 10px;
+}
+
+/* الصورة داخل العنصر */
+.drink img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover; /* ملء العنصر بالكامل مع الحفاظ على النسب الأصلية */
+    max-width: 300px;
+    max-height: 300px;
+}
+
+/* نص المشروب */
+.drink span {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    padding: 10px;
+}
+
+/* ترتيب العنصر الأخير لوحده */
+.drink:nth-child(5) {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+/* تأثير تحريك العنصر عند التمرير */
+.drink:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    background: #eaffea;
+}
+
+/* إعداد القسم بالكامل */
+#menu {
+    padding: 50px 20px;
+    background: #f8f9fa;
+}
+
+/* تصميم القسم الخاص بالطعام */
+.food-sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* العنصر الخاص بفئة الطعام */
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background: #e8e8e8;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* النص يظهر أسفل الصورة مباشرة */
+.category span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.5em;
+}
+
+/* تأثير تحريك العنصر عند التمرير */
+.category:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+/* العنصر الخاص بالمشروب */
+.drink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(220, 220, 220);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+    padding: 10px;
+    height: 300px;
+}
+
+/* الصورة داخل العنصر */
+.drink img {
+    width: 80%;
+    height: auto;
+    object-fit: cover; /* ملء العنصر بالكامل مع الحفاظ على النسب الأصلية */
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/* نص المشروب */
+.drink span {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    padding: 10px;
+}
+
+/* تأثير تحريك العنصر عند التمرير */
+.drink:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    background: #eaffea;
+}
+
+
+/* إعداد قسم About Us */
+.about-us {
+    padding: 50px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 3em;
+    color: #00704A;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+    padding: 10px 0;
+}
+
+.about-us .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.about-us img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.about-us img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* تأثير تحريك العنصر */
+.about-us p span {
+    font-weight: bold;
+    color: #00704A;
+}
